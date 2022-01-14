@@ -29,6 +29,9 @@ export default {
   },
   methods: {
     clickAdd() {
+      if (this.newMember === "") {
+        return;
+      }
       this.members.push(this.newMember);
       this.newMember = "";
     },
