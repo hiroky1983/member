@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>抽選アプリ</h1>
+    <Member />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Member from "./components/Member.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Member,
+  },
+};
 </script>
 
 <style>
@@ -24,5 +24,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: darkturquoise;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-blend-mode: hard-light;
 }
 </style>
