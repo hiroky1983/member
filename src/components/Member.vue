@@ -19,7 +19,7 @@
     <div id="resultFIeld">
       {{ result }}
     </div>
-    <button class="btn">追加</button>
+    <button class="btn" @click="clickChoose">追加</button>
   </div>
 </template>
 
@@ -39,6 +39,15 @@ export default {
       }
       this.members.push(this.newMember);
       this.newMember = "";
+    },
+    clickChoose() {
+      // const that = this;
+      const resultI =
+        this.members[Math.floor(Math.random() * this.members.length)];
+      console.log(resultI);
+      console.log(this.members);
+      this.result = resultI;
+      alert(`メンバーは${resultI}さんです`);
     },
   },
 };
