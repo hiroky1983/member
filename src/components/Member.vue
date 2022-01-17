@@ -17,7 +17,9 @@
       </ul>
     </div>
     <div id="resultFIeld">
-      {{ result }}
+      <p class="resultText">
+        {{ result }}
+      </p>
     </div>
     <button class="btn" @click="clickChoose">追加</button>
   </div>
@@ -41,11 +43,8 @@ export default {
       this.newMember = "";
     },
     clickChoose() {
-      // const that = this;
       const resultI =
         this.members[Math.floor(Math.random() * this.members.length)];
-      console.log(resultI);
-      console.log(this.members);
       this.result = resultI;
       alert(`メンバーは${resultI}さんです`);
     },
@@ -67,7 +66,7 @@ export default {
   background-color: black;
   color: white;
   padding: 6px;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 .btn:hover {
   background-color: gray;
@@ -79,5 +78,12 @@ export default {
   height: 70px;
   margin: 0 auto;
   border-radius: 40px;
+  position: relative;
+}
+.resultText {
+  position: absolute;
+  left: 50%;
+  font-size: 40px;
+  font-weight: bold;
 }
 </style>
