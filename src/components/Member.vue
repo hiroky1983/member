@@ -73,16 +73,18 @@ export default {
   cursor: pointer;
 }
 #resultFIeld {
+  box-sizing: border-box;
   background-color: white;
   width: 60%;
-  height: 70px;
+  height: 80px;
   margin: 0 auto;
   border-radius: 40px;
   position: relative;
 }
 .resultText {
   position: absolute;
-  left: 50%;
+  left: 45%;
+  top: 10%;
   font-size: 40px;
   font-weight: bold;
 }
