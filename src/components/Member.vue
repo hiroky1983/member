@@ -88,4 +88,8 @@ export default {
   font-size: 40px;
   font-weight: bold;
 }
+li {
+  padding: 2px;
+  font-size: 24px;
+}
 </style>
