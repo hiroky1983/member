@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>抽選アプリ</h1>
+    <h1 class="top">抽選アプリ</h1>
     <Member />
   </div>
 </template>
@@ -23,11 +23,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #1c242e;
-  margin-top: 60px;
-  background-color: darkturquoise;
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  background-blend-mode: hard-light;
+  margin: 0px;
+  background-color: rgb(226, 226, 226);
+}
+.top {
+  padding: 16px 0;
 }
 </style>

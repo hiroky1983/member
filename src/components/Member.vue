@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div>
       <input
         type="text"
@@ -60,9 +60,12 @@ export default {
   padding: 6px;
   background-color: white;
   border-radius: 14px;
+  width: 300px;
+  margin-top: 16px;
+  caret-color: #4338ca;
 }
 .btn {
-  margin-left: 4px;
+  margin: 12px;
   background-color: black;
   color: white;
   padding: 6px;
@@ -71,6 +74,7 @@ export default {
 .btn:hover {
   background-color: gray;
   cursor: pointer;
+  transition-delay: 75ms;
 }
 #resultFIeld {
   box-sizing: border-box;
@@ -82,6 +86,7 @@ export default {
   position: relative;
 }
 .resultText {
+  box-sizing: border-box;
   position: absolute;
   left: 45%;
   top: 10%;
@@ -91,5 +96,7 @@ export default {
 li {
   padding: 2px;
   font-size: 24px;
+  display: grid;
+  gap: 4px;
 }
 </style>
